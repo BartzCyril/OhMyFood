@@ -9,6 +9,7 @@
   align-items: center;
   justify-content: center;
   animation: disappear 0.1s 3s forwards;
+  z-index: 1;
 }
 
 .loading-spinner::before {
