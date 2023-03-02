@@ -127,15 +127,43 @@ body {
 .card-restaurant {
     display: block;
     height: 250px;
-
-    img {
-        width: 100%;
-        height: 175px;
-        border-radius: 15px 15px 0px 0px;
-    }
-
     text-decoration: none;
     color: black;
+}
+
+.card-restaurant-img {
+    width: 100%;
+        height: 175px;
+        border-radius: 15px 15px 0px 0px;
+        position: relative;
+}
+
+#palette {
+    background: url(../img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg) center center / cover no-repeat;
+}
+
+#noteEnchantee {
+    background: url(../img/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg) center center / cover no-repeat;
+}
+
+#francaise {
+    background: url(../img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg) center center / cover no-repeat;
+}
+
+#deliceSens {
+    background: url(../img/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg) center center / cover no-repeat;
+}
+
+.card-restaurant-new {
+    position: absolute;
+    padding: 8px 8px;
+    background-color: $tertiary;
+    border-radius: 2px;
+    right: 1px;
+    margin-right: 14px;
+    top: 10px;
+    color: #1d9778;
+    font-weight: bold;
 }
 
 .card-restaurant-content {
@@ -188,46 +216,17 @@ body {
         max-width: none;
     }
     .restaurants {
-        max-width: 1100px;
+        max-width: 900px;
         margin: 130px auto 0 auto;
     }
     .fonctionnement {
-        max-width: 1100px;
+        max-width: 900px;
         margin: 101px auto 0 auto;
     }
     .main-footer-column {
-        max-width: 1100px;
+        max-width: 900px;
         margin: 0 auto;
     }
 }
 
-.loading-spinner {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
-.loading-spinner::before {
-    content: '';
-    position: absolute;
-    top: calc(50% - 25px);
-    left: calc(50% - 25px);
-    width: 50px;
-    height: 50px;
-    border-radius: 100%;
-    border: 2px solid #fff;
-    border-top-color: $primary;
-    animation: spinner 1s ease-in-out infinite;
-}
-
-@keyframes spinner {
-    to {
-        transform: rotate(360deg);
-    }
-}
