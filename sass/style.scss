@@ -11,7 +11,7 @@ body {
     max-width: 768px;
     margin: 0 auto;
     background:
-        linear-gradient(to top, rgba(255,255,255,0.6), rgba(255, 255, 255, 0.6)),
+        linear-gradient(to top, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)),
         url("../maquettes/Accueil.png") top center no-repeat;
 }
 
@@ -36,11 +36,13 @@ body {
     text-align: center;
     margin-top: 54px;
     padding: 0px 40px;
+
     p {
         margin-top: 18px;
         font-size: 17px;
         line-height: 19px;
     }
+
     a {
         margin: 0 auto;
         display: block;
@@ -53,6 +55,7 @@ body {
         width: fit-content;
         background: linear-gradient(to right bottom, $secondary, $primary);
     }
+
     h2 {
         @extend .title;
         margin: 0 26px;
@@ -61,7 +64,49 @@ body {
 
 .fonctionnement {
     margin-top: 101px;
-    padding: 0 39px;
+    padding: 0 21px;
 }
 
+.parent-card-etape {
+    display: flex;
+    flex-direction: column;
+    padding: 0 15px;
+    margin-top: 40px;
+    row-gap: 43px;
+}
 
+.card-etape {
+    display: flex;
+    align-items: center;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+    padding: 15px 25px;
+    border-radius: 15px;
+    position: relative;
+    svg {
+        fill: gray;
+    }
+    p {
+        margin-left: 20px;
+    }
+    &:hover {
+        svg {
+            fill: $primary;
+        }
+        background-color: #fde3f6;
+    }
+}
+
+@for $i from 1 through 3 {
+    .card-etape:nth-child(#{$i})::before {
+        content: '#{$i}';
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 25px;
+        height: 25px;
+        background-color: $primary;
+        left: -17px;
+        border-radius: 100%;
+    }
+}
