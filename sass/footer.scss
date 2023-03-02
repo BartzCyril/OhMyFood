@@ -1,0 +1,30 @@
+.main-footer {
+    margin-top: 60px;
+    padding: 27px 0px 27px 25px;
+    a {
+        color: white;
+        text-decoration: none;
+    }
+    background-color: rgb(63, 62, 62);
+}
+
+.logo-footer {
+    font-family: 'Shrikhand', sans-serif;
+    font-size: 18px;
+}
+
+.main-footer-contents {
+    margin-top: 18px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+
+.main-footer-contents-with-logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    a {
+        margin-left: 4px;
+    }
+}
