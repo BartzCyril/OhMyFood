@@ -7,6 +7,9 @@
   color: white;
   text-decoration: none;
 }
+.main-footer a:hover {
+  text-decoration: underline;
+}
 
 .logo-footer {
   font-family: "Shrikhand", sans-serif;
