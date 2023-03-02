@@ -8,6 +8,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  animation: disappear 0.1s 3s forwards;
 }
 
 .loading-spinner::before {
@@ -23,6 +24,14 @@
   animation: spinner 1s ease-in-out infinite;
 }
 
+@keyframes disappear {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0);
+  }
+}
 @keyframes spinner {
   to {
     transform: rotate(360deg);

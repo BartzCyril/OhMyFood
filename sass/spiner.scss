@@ -10,6 +10,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    animation: disappear .1s 3s forwards;
 }
 
 .loading-spinner::before {
@@ -23,6 +24,15 @@
     border: 2px solid #fff;
     border-top-color: $primary;
     animation: spinner 1s ease-in-out infinite;
+}
+
+@keyframes disappear {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(0);
+    }
 }
 
 @keyframes spinner {
