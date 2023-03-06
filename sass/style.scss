@@ -30,6 +30,20 @@ body {
     padding: 18px calc(33% / 2);
 }
 
+.like:hover {
+    animation: fill-grad .5s forwards;
+}
+
+@keyframes fill-grad {
+    from {
+        fill: white;
+    }
+
+    to {
+        fill: url(#grad);
+    }
+}
+
 
 
 

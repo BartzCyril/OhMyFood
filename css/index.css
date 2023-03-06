@@ -177,18 +177,6 @@
   font-size: 17px;
 }
 
-.like:hover {
-  animation: fill-grad 0.5s forwards;
-}
-
-@keyframes fill-grad {
-  from {
-    fill: white;
-  }
-  to {
-    fill: url(#grad);
-  }
-}
 @media only screen and (min-width: 500px) {
   .parent-card-restaurant {
     display: grid;

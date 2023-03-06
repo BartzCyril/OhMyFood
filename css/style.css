@@ -73,4 +73,17 @@ body {
   padding: 18px 16.5%;
 }
 
+.like:hover {
+  animation: fill-grad 0.5s forwards;
+}
+
+@keyframes fill-grad {
+  from {
+    fill: white;
+  }
+  to {
+    fill: url(#grad);
+  }
+}
+
 /*# sourceMappingURL=style.css.map */

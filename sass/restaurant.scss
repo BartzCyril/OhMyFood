@@ -56,30 +56,69 @@ body {
 }
 
 .card-menu-items-plats {
+    display: block;
+    position: relative;
     margin-top: 11px;
-    padding: 15px 20px 15px 10px;
     box-shadow: 5px 5px 15px rgb(203 200 200 / 50%);
     border-radius: 15px;
+    overflow: hidden;
+    color: black;
+    text-decoration: none;
 }
 
 .card-menu-items-plats-first-child {
     margin-top: 15px;
 }
 
-.card-menu-items-plats-column {
+.card-menu-items-plats-informations {
     display: flex;
-    flex-direction: column;
     h4 {
         font-weight: bold;
         font-size: 18px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;    
+    }
+    div:nth-child(1) {
+        padding: 15px 0px 15px 10px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap; 
+        span {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap; 
+        }
+    }
+    &:hover .card-menu-items-informations-check {
+        margin-right: 0;
+    }
+    &:hover .card-menu-items-informations-check svg{
+        animation: rotate 1s ease-in-out;
     }
 }
 
-.card-menu-items-plats-row {
-    margin-top: 8px;
+.card-menu-items-informations-check {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    margin-right: -3.5rem;
+    transition: margin-right 0.5s;
+    width: 3.5rem;
+    background-color: $tertiary;
+    flex-shrink: 0;
+}
+
+.card-menu-items-plats-informations-ingredients {
+    display: block;
+    margin-top: 15px;
+}
+
+.card-menu-items-informations-price {
+    display: flex;
+    align-items: end;
+    margin-left: auto;
+    padding: 0px 20px 15px 0px;
 }
 
 .card-menu-items:nth-child(2) {
@@ -103,6 +142,15 @@ body {
     }
     to {
         opacity: 1;
+    }
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(-150deg);
+    }
+    to {
+        transform: rotate(0deg);
     }
 }
 
