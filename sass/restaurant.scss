@@ -17,10 +17,10 @@ body {
 }
 
 .card-menu {
-    padding: 42px 15px 0 15px;
+    padding: 42px 15px 32px 15px;
     border-radius: 40px 40px 0 0;
     width: 100%;
-    background-color: white;
+    background-color: #F7F7F7;
 }
 
 .card-menu-header {
@@ -31,6 +31,22 @@ body {
     h2 {
         font-family: 'Shrikhand', sans-serif;
         font-size: 28px;
+    }
+    div {
+        display: flex;
+        width: 30px;
+        height: 30px;
+    }
+    i {
+        display: flex;
+        align-items: center;
+    }
+    i:hover {
+        font-weight: 900;
+        color: transparent;
+        background-image: linear-gradient(to right bottom, $secondary, $primary);
+        background-clip: text;
+        transition: all .7s ease-in-out;
     }
 }
 
@@ -59,7 +75,7 @@ body {
     display: block;
     position: relative;
     margin-top: 11px;
-    box-shadow: 5px 5px 15px rgb(203 200 200 / 50%);
+    box-shadow: 0px 5px 15px rgb(203 200 200 / 50%);
     border-radius: 15px;
     overflow: hidden;
     color: black;
@@ -93,8 +109,11 @@ body {
     &:hover .card-menu-items-informations-check {
         margin-right: 0;
     }
-    &:hover .card-menu-items-informations-check svg{
+    &:hover .card-menu-items-informations-check i{
         animation: rotate 1s ease-in-out;
+    }
+    &:hover .card-menu-items-informations-price {
+        padding-left: 5px;
     }
 }
 
@@ -102,16 +121,19 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: -3.5rem;
+    margin-right: -4rem;
     transition: margin-right 0.5s;
-    width: 3.5rem;
+    width: 4rem;
     background-color: $tertiary;
     flex-shrink: 0;
+    i {
+        color: white;
+    }
 }
 
 .card-menu-items-plats-informations-ingredients {
     display: block;
-    margin-top: 15px;
+    margin-top: 8px;
 }
 
 .card-menu-items-informations-price {
@@ -119,6 +141,7 @@ body {
     align-items: end;
     margin-left: auto;
     padding: 0px 20px 15px 0px;
+    font-weight: bold;
 }
 
 .card-menu-items:nth-child(2) {
@@ -129,28 +152,40 @@ body {
 .card-menu-items:nth-child(3) {
     animation: appear forwards;
     animation-delay: 1s;
+    animation-duration: 1s;
 }
 
 .card-menu-items:nth-child(4) {
     animation: appear forwards;
     animation-delay: 2s;
+    animation-duration: 1s;
 }
 
 @keyframes appear {
     from {
         opacity: 0;
+        transform: translateY(20px);
     }
     to {
         opacity: 1;
+        transform: translateY(0);
     }
 }
 
 @keyframes rotate {
     from {
-        transform: rotate(-150deg);
+        transform: rotate(-250deg);
     }
     to {
         transform: rotate(0deg);
     }
 }
 
+@media only screen and (min-width: 630px) {
+    .section-menu {
+        margin-top: 300px;
+    }
+    .img-repas {
+        height: 350px;
+    }
+}

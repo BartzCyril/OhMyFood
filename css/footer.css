@@ -1,19 +1,17 @@
-.main-footer {
-  margin-top: 60px;
+footer {
   padding: 27px 0px 27px 25px;
   background-color: rgb(63, 62, 62);
 }
-.main-footer a {
+footer a:first-child {
+  font-family: "Shrikhand", sans-serif;
+  font-size: 18px;
+}
+footer a {
   color: white;
   text-decoration: none;
 }
-.main-footer a:hover {
+footer a:hover {
   text-decoration: underline;
-}
-
-.logo-footer {
-  font-family: "Shrikhand", sans-serif;
-  font-size: 18px;
 }
 
 .main-footer-contents {
@@ -26,10 +24,12 @@
 .main-footer-contents-with-logo {
   display: flex;
   flex-direction: row;
-  align-items: center;
 }
 .main-footer-contents-with-logo a {
   margin-left: 4px;
+}
+.main-footer-contents-with-logo i {
+  color: white;
 }
 
 /*# sourceMappingURL=footer.css.map */

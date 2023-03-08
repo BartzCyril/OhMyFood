@@ -1,6 +1,9 @@
-.main-footer {
-    margin-top: 60px;
+footer {
     padding: 27px 0px 27px 25px;
+    a:first-child {
+        font-family: 'Shrikhand', sans-serif;
+        font-size: 18px;
+    }
     a {
         color: white;
         text-decoration: none;
@@ -9,11 +12,7 @@
         text-decoration: underline;
     }
     background-color: rgb(63, 62, 62);
-}
 
-.logo-footer {
-    font-family: 'Shrikhand', sans-serif;
-    font-size: 18px;
 }
 
 .main-footer-contents {
@@ -26,8 +25,10 @@
 .main-footer-contents-with-logo {
     display: flex;
     flex-direction: row;
-    align-items: center;
     a {
         margin-left: 4px;
+    }
+    i {
+        color: white;
     }
 }

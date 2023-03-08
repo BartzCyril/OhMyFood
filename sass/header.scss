@@ -1,19 +1,22 @@
 .header-main {
+    background-color: #F7F7F7;
     position: relative;
-    padding: 18px;
-}
-
-.logo {
-    font-family: 'Shrikhand', sans-serif;
-    color: black;
-    text-decoration: none;
-    font-size: 30px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    padding: 30px;
+    .logo {
+        font-family: 'Shrikhand', sans-serif;
+        color: black;
+        text-decoration: none;
+        font-size: 30px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
 }
 
 .back {
     display: flex;
+    i {
+        color: black;
+    }
 }

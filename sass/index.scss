@@ -1,41 +1,44 @@
 @import "../libs/colors.scss";
 
 .location {
-    padding: 6px;
-    box-shadow: 0px -5px 3px -5px rgb(102 102 102 / 80%);
-    background: rgb(241 241 241);
-}
-
-.container-location {
-    max-width: 169px;
-    margin: 0px auto;
+    padding: 15px;
+    box-shadow: inset 0px 5px 3px -5px rgb(102 102 102 / 80%);
+    background: #EAEAEA;
+    width: 100%;
+    display: flex;
+    justify-content: center;
     font-size: 18px;
+    p {
+        margin-left: 10px;
+    }
 }
 
 .title {
     font-size: 24px;
     line-height: 26px;
+    font-weight: bold;
 }
 
 .reservation {
     text-align: center;
-    margin-top: 54px;
-    padding: 0px 40px;
-
+    padding: 54px 40px 50.5px 40px;
+    background-color: #F7F7F7;
     p {
         margin-top: 18px;
         font-size: 17px;
         line-height: 19px;
+        font-weight: 100;
     }
 
     h2 {
         @extend .title;
         margin: 0 26px;
+        font-weight: bold;
     }
 }
 
 .fonctionnement {
-    margin-top: 101px;
+    margin-top: 50.5px;
     padding: 0 21px;
 }
 
@@ -50,24 +53,22 @@
 .card-etape {
     display: flex;
     align-items: center;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
-    padding: 15px 25px;
+    box-shadow: 5px 5px 15px rgb(203 200 200 / 50%);
+    padding: 25px;
     border-radius: 15px;
     position: relative;
-
-    svg {
-        fill: gray;
+    background-color: #f7f7f7;
+    i {
+        color: #7E7E7E;
     }
-
     p {
         margin-left: 20px;
+        font-weight: bold;
     }
-
     &:hover {
-        svg {
-            fill: $primary;
+        i {
+           color: #9356DC; 
         }
-
         background-color: #fde3f6;
     }
 }
@@ -81,15 +82,17 @@
         justify-content: center;
         width: 25px;
         height: 25px;
-        background-color: $primary;
+        background-color: #9356DC;
+        color: white;
         left: -17px;
         border-radius: 100%;
     }
 }
 
 .restaurants {
-    margin-top: 130px;
-    padding: 0 20px;
+    margin-top: 65px;
+    padding: 65px 20px 60px 20px;
+    background-color: #F7F7F7;
 }
 
 .parent-card-restaurant {
@@ -104,13 +107,24 @@
     height: 250px;
     text-decoration: none;
     color: black;
+    i {
+        display: flex;
+        align-items: center;
+    }
+    i:hover {
+        font-weight: 900;
+        color: transparent;
+        background-image: linear-gradient(to right bottom, $secondary, $primary);
+        background-clip: text;
+        transition: all .7s ease-in-out;
+    }
 }
 
 .card-restaurant-img {
     width: 100%;
-        height: 175px;
-        border-radius: 15px 15px 0px 0px;
-        position: relative;
+    height: 175px;
+    border-radius: 15px 15px 0px 0px;
+    position: relative;
 }
 
 #palette {
@@ -135,14 +149,14 @@
     background-color: $tertiary;
     border-radius: 2px;
     right: 1px;
-    margin-right: 14px;
+    margin-right: 10px;
     top: 10px;
     color: #1d9778;
     font-weight: bold;
 }
 
 .card-restaurant-content {
-    padding: 13px 23px 13px 10px;
+    padding: 15px 23px 15px 10px;
     display: flex;
     justify-content: space-between;
     box-shadow: 5px 5px 15px rgb(203 200 200 / 50%);
@@ -152,7 +166,7 @@
 .card-restaurant-informations {
     display: flex;
     flex-direction: column;
-    row-gap: 9px;
+    row-gap: 5px;
 
     h3 {
         font-weight: bold;
@@ -161,6 +175,7 @@
 
     span {
         font-size: 17px;
+        font-weight: 100;
     }
 }
 
@@ -178,7 +193,9 @@
     }
     .restaurants {
         max-width: 900px;
-        margin: 130px auto 0 auto;
+        margin: 50px auto 0 auto;
+        padding-top: 0;
+        background-color: white;
     }
     .fonctionnement {
         max-width: 900px;

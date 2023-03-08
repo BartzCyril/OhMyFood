@@ -1,7 +1,7 @@
 @import "../libs/reset.scss";
 @import "../libs/colors.scss";
 @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&family=Shrikhand&display=swap');
 
 html {
     font-family: 'Roboto', sans-serif;
@@ -21,6 +21,7 @@ body {
     text-decoration: none;
     background-color: #e9e9e9;
     color: white;
+    font-weight: bold;
     width: fit-content;
     background: linear-gradient(to right bottom, $secondary, $primary);
 }
