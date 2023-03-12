@@ -8,6 +8,8 @@ body {
     width: 100%;
     height: 255px;
     position: absolute;
+    object-fit: cover;
+    object-position: bottom;    
 }
 
 .section-menu {
@@ -187,5 +189,6 @@ body {
     }
     .img-repas {
         height: 350px;
+    
     }
 }
