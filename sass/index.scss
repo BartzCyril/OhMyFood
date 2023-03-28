@@ -115,7 +115,7 @@
         font-weight: 900;
         color: transparent;
         background-image: linear-gradient(to right bottom, $secondary, $primary);
-        background-clip: text;
+        -webkit-background-clip: text;
         transition: all .7s ease-in-out;
     }
 }
